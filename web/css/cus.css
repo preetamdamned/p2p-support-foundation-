@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Oct, 2014, 12:43:53 PM
+    Author     : preet_000
+*/
+
+/*h1,h2,h3,h4,h5,h6{
+    font-family: 
+}*/
+
+//animations
+
+//design
+h1{
+
+}
+
+.smooth{
+    transition-duration: 1s;
+}
+.abs{
+    position: absolute;
+    bottom: 0px;
+}
+p{
+    /* font-family: 'Kalam', cursive; */
+}
+
+body{
+    background: rgb(5, 64, 77);
+    height: 0;
+}
+
+.wrap{
+    /*background:*/ 
+}
+.form-action{
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-left: 4%;
+    background: rgb(191, 213, 237);
+}
+.footer{
+    box-shadow: 0 0 15px black;
+    position: fixed;
+    bottom: 0px;
+    margin-top: 50px;
+    /* padding-top: 30px; */
+    font-size: smaller;
+    /* border-top: 5px solid rgb(0, 14, 18); */
+    background: rgb(102, 102, 102);
+    transition-duration: 500ms;
+    padding: 0px;
+    border-top: 2px white solid;
+}
+
+#snapper{
+    height: 50px; 
+    width: 50px;
+    background: rgb(102, 102, 102); 
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    /*z-index: 2;*/
+    overflow: hidden;
+    margin: auto;border-radius: 25px;     
+    transition-duration: 500ms;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+
+}
+.rotate180{
+    transform: rotate(180deg); 
+
+}
+#reg_form form {
+    margin: 0;
+    margin-top: 4%;
+}
+#reg_form{
+    padding: 0px 15px 0px 15px;
+    background: white;
+    box-shadow: 0 0 20px black;
+    transition-duration: 1s;
+}
