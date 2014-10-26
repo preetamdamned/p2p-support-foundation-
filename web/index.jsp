@@ -2,31 +2,34 @@
 <%@page import="p2p.UserBean"%>
 <%
 //    out.print(""+);
+    UserBean user;
     if (request.getSession().getAttribute("importedUser") == null) {
         response.sendRedirect("login.jsp");
+        user = new UserBean();//fixes exception
+    } else {
+        user = (UserBean) session.getAttribute("importedUser");
     }
-    UserBean user=(UserBean)session.getAttribute("importedUser");
 %>
 <jsp:include page="components/head.jsp"></jsp:include>
 <jsp:include page="components/offcanvasHead.jsp"></jsp:include>
 <%--<jsp:include page="components/navbar.jsp"></jsp:include>--%>
 <script>
-    $("body").css("background","black");
+    $("body").css("background", "black");
 </script>
 <div class="row">
     <div class="large-12 column hide-for-small">
         <br/>
         <br/>
-        <h2>We were expecting you <%= user.getFname() %>. Welcome aboard.<h2>
-                <br/>
-        
+        <!--<h2>We were expecting you. Welcome aboard.<h2>-->
+        <br/>
+
     </div>
 </div>
 <div class="row">
     <div class="large-3 columns ">
         <div class="panel">
             <a href="#"><img src="./Foundation Template   Feed_files/300x240&text=[img].bmp"></a>
-            <h5><a href="#">Your Name</a></h5>
+            <h5><a href="#"><%=user.getFname()%></a></h5>
             <div class="section-container vertical-nav" data-section="" data-options="deep_linking: false; one_up: true">
                 <section class="section">
                     <h5 class="title"><a href="#">Section 1</a></h5>
