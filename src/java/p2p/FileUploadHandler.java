@@ -33,9 +33,10 @@ public class FileUploadHandler extends HttpServlet {
                 for(FileItem item : multiparts){
                     if(!item.isFormField()){
                         String uploadName = new File(item.getName()).getName();
+//                        String name = new File(item.getName()).getName();
                         
-                        String name=uploadDir + File.separator+ "pic_"+((ProfileBean)request.getSession().getAttribute("importedProfile")).getUser_id()+uploadName.substring(uploadName.lastIndexOf('.'));
-                        
+                        String name=uploadDir + File.separator+ "pic_"+((ProfileBean)request.getSession(false).getAttribute("importedProfile")).getProfile_id()+uploadName.substring(uploadName.lastIndexOf('.'));
+//                        name=uploadDir+File.separator+name;
                         item.write( new File(name));
                     }
                 }
