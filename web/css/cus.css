@@ -18,6 +18,59 @@ and open the template in the editor.
 h1{
 
 }
+/*font-family: 'Dosis', sans-serif;*/
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+.user-info-row-1{
+        margin:5px 0 5px 0; 
+
+}
+.user-info-row-2{
+        margin:10px 0 10px 0; 
+
+}
+.user-info-row-3{
+        margin:20px 0 20px 0; 
+
+}
+.user-info-row-4{
+        margin:25px 0 25px 0; 
+
+}
+.user-info-row{
+    font-family: 'Raleway', sans-serif;
+}
+.user-title{
+    text-transform: capitalize;
+}
+.avatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+}
+.menubar{
+    font-weight: 700;
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    background: #134b5b;
+    color: white;
+}
+.sub-nav{
+    margin-top: 20px
+}
+.menubar h2{
+    color: white;
+}
+
+.user-info{
+    clear: both;
+    min-height: 350px;
+    background-color: #134b5b;
+    padding: 20px;
+    color: white !important;
+}
 
 .smooth{
     transition-duration: 1s;
@@ -31,7 +84,7 @@ p{
 }
 
 body{
-    background: rgb(5, 64, 77);
+    /*background: rgb(5, 64, 77);*/
     height: 0;
 }
 
@@ -44,6 +97,7 @@ body{
     padding-left: 4%;
     background: rgb(191, 213, 237);
 }
+
 .footer{
     box-shadow: 0 0 15px black;
     position: fixed;

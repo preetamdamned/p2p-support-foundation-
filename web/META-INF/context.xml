@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/p2p"/>
+<Context antiJARLocking="true" path="/p2p">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="p2p_support" password="toor" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/p2p_support?zeroDateTimeBehavior=convertToNull" username="root"/>
+  <ResourceLink global="p2p_support" name="ref" type="javax.sql.DataSource"/>
+</Context>

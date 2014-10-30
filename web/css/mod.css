@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Oct, 2014, 12:35:52 AM
+    Author     : preet_000
+*/
+
+            body{
+                background: #134b5b;
+                color: white;
+            }
+
+            h1,h2,h3,h4,h5,h6{
+                color: white;
+            }
+            .form-head{
+                background: #333333;
+                padding: 2%;
+            }

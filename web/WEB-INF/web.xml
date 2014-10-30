@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <filter>
+        <filter-name>db_con</filter-name>
+        <filter-class>p2p.db_fil</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>db_con</filter-name>
+        <url-pattern>/handler.jsp</url-pattern>
+        <url-pattern>/account.jsp</url-pattern>
+        <url-pattern>/accedit.jsp</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>FIleUploadHandler</servlet-name>
+        <servlet-class>p2p.FileUploadHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FIleUploadHandler</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>             C:\Users\preet_000\Documents\NetBeansProjects\p2p\web\upload\   </param-value>
+    </context-param>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    <resource-ref>
+        <description>jdbc:mysql://localhost:3306/p2p_support?zeroDateTimeBehavior=convertToNull</description>
+        <res-ref-name>ref</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+</web-app>

@@ -5,6 +5,7 @@
 
     if (request.getSession().getAttribute("importedUser") == null) {
         user = new UserBean();
+        user.setFname("Guest");
     } else {
         user = (UserBean) session.getAttribute("importedUser");
     }
@@ -44,7 +45,7 @@
                     <a href="#">Settings</a>
                     <ul class="dropdown">
                         <li><a href="account.jsp"><%=user.getFname()%></a></li>
-                        <li class="active"><a href="#">Edit Profile</a></li>
+                        <li class="active"><a href="accedit.jsp">Edit Profile</a></li>
                     </ul>
                 </li>
             </ul>
@@ -76,12 +77,17 @@
                 <li><label>Settings</label></li>
                 <li><a href="#"><%
                     out.print(user.getFname());%></a></li>
-                <li><a href="#">Edit Profile</a></li>
+                <li><a href="accedit.jsp">Edit Profile</a></li>
                 <li><a href="logout.jsp">logout</a></li>
-
+                <li><label>Actions</label></li>
+                <li><a href="logout.jsp">Create Post</a></li>
+                <li><a href="logout.jsp">My Forum</a></li>
+                <li><a href="logout.jsp">Feeds</a></li>
+                
 
             </ul>
         </aside>
+        
 
         <!--    <aside class="right-off-canvas-menu">
               <ul class="off-canvas-list">

@@ -16,15 +16,19 @@
         for (i = 0; i < 3; i++)
             for (j = 0; j < 4; j++)
             {
-                y = 150 + j * 150;
-                x = 150 + i * 150;
+                y = i * 150;
+                x = j * 150;
                 sleep(50);
-                $("#sticker").css("background", "url(img/abeeyyar.png) " + x+"px" + " " +"-"+ y+"px");
+                $("#sticker").css("background", "url(img/abeeyyar.png) " + x + "px" + " " + "-" + y + "px");
                 window.console.log("url(img/abeeyyar.png) " + x+"px" + " " +"-"+ y+"px");
             }
     };
-var ref=setTimeout(ani(),500);
+    var ref = setTimeout(ani(), 500);
 
+    var sudd=function (){
+        alert("abbey yaar!!");
+                        $("#sticker").css("background", "url(img/abeeyyar.png) " +"450 0");
+    };
 </script>
 <div id="sticker" onmousemove="ani();" style="
      position: absolute;

@@ -12,7 +12,15 @@ import java.io.Serializable;
  * @author preet_000
  */
 public class UserBean implements Serializable {
-    private String fname,lname,email,password,requestType;
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+    private String fname,lname,email,password,requestType,userType;
     private Integer user_id;
 
     public Integer getUser_id() {

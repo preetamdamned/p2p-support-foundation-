@@ -12,20 +12,9 @@
         <title>p2p support signin</title>
         <link rel="stylesheet" href="css/foundation.css" />
         <link rel="stylesheet" href="css/cus.css" />
+        <link rel="stylesheet" href="css/mod.css" />
         <script src="js/vendor/modernizr.js"></script>
-        <style>
-            body{
-                color: white;
-            }
-
-            h1,h2,h3,h4,h5,h6{
-                color: white;
-            }
-            .form-head{
-                background: #333333;
-                padding: 2%;
-            }
-        </style>
+        
     </head>
     <body>
         <div class="contained">
